@@ -17,8 +17,8 @@ const licences = {
 function generateMarkdown(data) {
   return `
 # ${data.title} ${licences[data.license]}
-## Describtion
-${data.describtion}
+## Description
+${data.description}
 ## Table of content
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -31,14 +31,14 @@ ${data.installation}
 ## Usage
 ${data.usage}
 ## License
-${data.license}
+${data.license} is used on this project.
 ## Contributing
 ${data.contributors}
 ## Tests
 ${data.tests}
 ## Questions
-If you have any more questions for the project you can alwasy contact me on my [email](mailto:${data.email}).
-[HERE](https://github.com/${data.github}) is lint to my github account. 
+If you have any more questions for the project you can always contact me on my [email](mailto:${data.email}). </br>
+[HERE](https://github.com/${data.github}) is link to my github account. 
 `;
 }
 

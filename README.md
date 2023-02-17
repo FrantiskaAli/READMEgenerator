@@ -1,7 +1,7 @@
 
-# srgtfv [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Describtion
-rtgfv
+# README generator [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+## Description
+This generator will create readme
 ## Table of content
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -10,14 +10,15 @@ rtgfv
 - [Tests](#Tests)
 - [Questions](#Questions)
 ## Installation
-gtfrbdv
+You will need to use nmp install command
 ## Usage
-gtfrdsv
+Run it with nod index.js
 ## License
-MIT License
+GNU General Public License v3.0 is used on this project.
 ## Contributing
-gfsdv
-## Tests
-fgdsvc
-## Questions
 
+## Tests
+I have created few readmes to check
+## Questions
+If you have any more questions for the project you can always contact me on my [email](mailto:tiskarechk@gmail.com).
+[HERE](https://github.com/FrantiskaAli) is link to my github account. 
