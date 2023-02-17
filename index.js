@@ -1,10 +1,17 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
-
+const extras = require("./utils/generateMarkdown");
 // array of questions for user
 const questions = [
+  {type: 'input',
+  message: 'Please enter your email',
+  name: 'email'
+  },
+  {type: 'input',
+  message: 'Your github name',
+  name:'github',
+  },
     {type:'input',
     message: 'Please, eneter title of your application',
     name:'title'},
@@ -18,8 +25,9 @@ const questions = [
     message: 'How to use your application?',
     name:'usage'}, 
     {type: 'list',
+    loop: false,
     message: 'Pick your license',
-    choices: ['one','two', 'three'],
+    choices: Object.keys(extras.licences),
     default: 3,
     name:'license'},
     {type: 'input',
@@ -27,24 +35,15 @@ const questions = [
     name: 'contributors'},//will need to create an array of all the contributors  separetelly
     {type: 'input',
     message: 'Tests done on this application so far',
-    name:'tests'}
-
-    //  , {'Questions'}
-]
-;
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
+    name:'tests'}];
 // function to initialize program
 function init() {
 inquirer
 .prompt(questions)
 .then((answers) => {
-  generateMarkdown(answers)
+ const myReadMe = extras.generateMarkdown(answers);
+ fs.writeFile('README.md', myReadMe, err => err ? console.error(err) : console.log('Well done, your readme is ready!') )
 })
 }
-
 // function call to initialize program
 init();
