@@ -2,6 +2,7 @@
 # README.md Generator [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
 This is command line application written in JavaScript (using Node.js). It creates my README file for my projects. This README is written using this very application.
+[HERE](https://www.youtube.com/watch?v=8Cng3GuJJ8c) you can see how my application works.
 ## Table of content
 - [Installation](#Installation)
 - [Usage](#Usage)
